@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+/* Bölümler */
+.row {
+  width: 100%;
+}
+
+section {
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  margin: 10px;
+  padding: 40px 15px 15px 15px;
+  position: relative;
+}
+
+.section-title {
+  position: absolute;
+top: 0;
+  right: 0;
+  background-color: #ffcc00;
+  border: 1px solid black;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+/* Masaüstü görünümü (992px ve üzeri) */
+@media (min-width: 992px) {
+  .col {
+    float: left;
+    width: 32%;
+  }
+}
+
+/* Tablet görünümü (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-1, .col-2 {
+    float: left;
+    width: 48%;
+  }
+  .col-3 {
+    width: 100%;
+    clear: both;
+  }
+}
+
+/* Mobil görünüm (767px ve altı) */
+@media (max-width: 767px) {
+  .col {
+    width: 100%;
+  }
+}
